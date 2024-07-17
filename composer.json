@@ -1,0 +1,42 @@
+{
+    "name": "jascha030/phpager",
+    "description": "A PHP Pager, mainly for output from mysql/mariadb.",
+    "license": "MIT",
+    "bin": [
+        "bin/phpager"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jascha030\\Phpager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jascha030",
+            "email": "contact@jaschavanaalst.nl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "bamarni/composer-bin-plugin": "^1.8"
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/console": "^7.1"
+    },
+    "config": {
+        "platform": {
+            "php": "8.2"
+        },
+        "allow-plugins": {
+            "bamarni/composer-bin-plugin": true
+        }
+    },
+    "extra": {
+        "bamarni-bin": {
+            "bin-links": true,
+            "forward-command": true
+        }
+    }
+}

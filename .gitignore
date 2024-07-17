@@ -1,0 +1,16 @@
+### Gitignore
+
+## IDE Projectfiles
+/.idea/
+/.vscode/
+
+## Dynamic
+/.var/
+/.build/
+
+## Library
+/vendor/
+/vendor-bin/**/vendor/
+/tools/**
+!/tools/phive
+
