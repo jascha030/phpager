@@ -2,16 +2,17 @@
 
 declare(strict_types=1);
 
-use PhpCsFixer\Finder;
 use PhpCsFixer\Config;
+use PhpCsFixer\Finder;
 
 return (new Config())
+    ->setRiskyAllowed(true)
     ->setRules([
-        '@PER-CS'       => true,
-        '@PER-CS:risky' => true,
-        '@PSR1'        => true,
-        '@PSR12'       => true,
-        '@PSR12:risky' => true,
+        '@PER-CS'        => true,
+        '@PER-CS:risky'  => true,
+        '@PSR1'          => true,
+        '@PSR12'         => true,
+        '@PSR12:risky'   => true,
         '@Symfony'       => true,
         '@Symfony:risky' => true,
 
@@ -166,7 +167,7 @@ return (new Config())
                 'tools',
                 '.github',
                 '.phive',
-                'vendor-bin'
+                'vendor-bin',
             ])
-            ->in(__DIR__)
+            ->in(__DIR__),
     );
